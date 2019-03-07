@@ -88,7 +88,7 @@ DEFINE CLASS String AS StaticVariable OF Static.prg
 			ENDIF 
 			DO CASE
 			CASE cFormat='d'	&& Short date 	10/12/2002
-				cResult=TRANSFORM(dConvert, "@YS")
+				cResult=TRANSFORM(dtConvert, "@YS")
 			CASE cFormat='D'	&& 	Long date 	Saturday, October 28, 2017.  Can't use @YL
 				cFormat='D, MMMM dd, yyyy'
 			CASE cFormat='f'	&& 	Full date & time 	December 10, 2002 10:11 PM
@@ -204,9 +204,9 @@ DEFINE CLASS String AS StaticVariable OF Static.prg
 	FUNCTION NumberToWords
 	*********************************************************
 	** Author   : Ramani (Subramanian.G)
-	**           ·FoxAcc Software / Winners Software
+	**           √°FoxAcc Software / Winners Software
 	**            www.winnersoft.coolfreepages.com
-	** Type    ·: Freeware with reservation to Copyrights
+	** Type    √°: Freeware with reservation to Copyrights
 	** Warranty : Nothing implied or explicit
 	** Last modified : June, 2003
 	*********************************************************
